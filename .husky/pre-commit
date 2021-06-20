@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+echo ''
+echo 'Inicio do pre-commit.'
+echo ''
+yarn lint-staged
+echo ''
+echo 'Fim do pre-commit.'
+echo ''
